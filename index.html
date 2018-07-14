@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="font/iconfont.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+        body a{
+            color: rgba(0, 0, 0, 0.87);
+        }
+        body{
+            color: rgba(0, 0, 0, 0.87);
+            font-size: 16px;
+            background: #f7f7f7;
+            /*font-size: 1.6rem;*/
+            font-weight: 400;
+        }
+        #nav{
+            background: #ffffff;
+            box-shadow: 0 0 4px rgba(0, 0, 0, 0.12);
+            position: relative;
+            overflow: visible;
+            line-height: 200%;
+            /*display: table;*/
+            /*box-sizing: border-box;*/
+        }
+        @media screen and (min-width: 1025px) {
+            #nav{
+                position: fixed;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                width: 30%;
+                z-index: 999;
+            }
+            #content{
+                left: auto;
+                margin-left: 30%;
+                padding-bottom: 24px;
+                padding-top: 24px;
+                width: 70%;
+            }
+            #content .wrapper{
+                padding: 0 24px;
+            }
+        }
+        @media screen and (max-width: 1024px) {
+
+        }
+        #nav .primary{
+            height: 48px;
+            padding: 24px;
+        }
+        #nav .primary .logo{
+            margin-right: 12px;
+        }
+        #nav .primary .logo img{
+            float: left;
+            width: 36px;
+        }
+        #nav .primary ul{
+            display: inline-block;
+        }
+        #nav .primary ul li{
+            float: left;
+        }
+        #nav .primary ul li a{
+            font-weight: 700;
+            padding: 5px 10px 5px;
+        }
+        #nav .primary i{
+            float: right;
+            height: 24px;
+            opacity: 0.8;
+        }
+        #nav .body{
+            display: table;
+            height: calc(100% - 98px);
+            width: 100%;
+            box-sizing: border-box;
+        }
+        #nav .body #account-entry{
+            display: table-cell;
+            vertical-align: middle;
+            padding: 0 24px 0 48px;
+            height: 100%;
+            font-size: 26px;
+            font-weight: 700;
+            clear: both;
+        }
+        #nav .body #account-entry .display-1{
+            margin-bottom: 24px;
+        }
+        #nav .body #account-entry .display-1 i{
+            font-size: 26px;
+        }
+        #nav .body #account-entry .account{
+            width: 100%;
+        }
+        #nav .body #account-entry .account i{
+            font-size: 16px;
+        }
+        #nav .body #account-entry .account a{
+            margin-right: 24px;
+            color: #00a862;
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+
+
+        #content{
+            position: relative;
+            overflow: hidden;
+        }
+        #content .tag_ad{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            padding: 0 6px;
+            color: #ffffff;
+            background: #000000;
+            font-size: 12px;
+            line-height: 200%;
+            opacity: 0.6;
+            border-radius: 2px;
+            z-index: 99;
+        }
+        #content .hero{
+            margin-top: -24px;
+        }
+        #content .hero img{
+            width: 100%;
+        }
+        #content .wrapper{
+            box-sizing: border-box;
+            width: 100%;
+            margin: 0 auto;
+        }
+        #content .promotion{
+            padding: 24px 0;
+            margin: -12px;
+        }
+        #content .promotion .column-3 a{
+            box-sizing: border-box;
+            padding: 12px;
+            width: 33.3333%;
+            float: left;
+        }
+        #content .promotion .column-3 img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <div class="primary">
+            <a class="logo" href="">
+                <img src="img/logo.svg" alt="">
+            </a>
+            <ul>
+                <li>
+                    <a href="">门店</a>
+                </li>
+                <li>
+                    <a href="">我的账户</a>
+                </li>
+                <li>
+                    <a href="">菜单</a>
+                </li>
+            </ul>
+            <i class="iconfont icon-caidan" href=""></i>
+        </div>
+        <div class="body">
+            <div id="account-entry">
+                <div class="display-1">
+                <span>
+                    心情惬意，来杯咖啡吧 <i class="iconfont icon-sekuaichabei"></i>
+                </span>
+                </div>
+                <div class="account">
+                    <a href="">
+                        <i class="iconfont icon-accountbox"></i>
+                        <span>登录</span>
+                    </a>
+                    <a href="">
+                        <span>注册</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="content">
+        <div class="tag_ad">广告</div>
+        <div class="hero">
+            <img src="img/kv-beve.jpg" alt="">
+        </div>
+        <div class="promotion">
+            <div class="wrapper">
+                <div class="column-3">
+                    <a href=""><img src="img/promotion-1.jpg" alt=""></a>
+                    <a href=""><img src="img/promotion-2.jpg" alt=""></a>
+                    <a href=""><img src="img/promotion-3.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="program-msr">
+            <div class="wrapper">
+
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+</html>
